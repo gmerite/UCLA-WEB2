@@ -53,17 +53,68 @@
 			/*-------------------------------------
 			| Review
 			-------------------------------------*/
+			//Single line comment
+			/* multilinecomments
+			more than a line
+			*/
 
+			var container1='I went to the park';
+			var container2= ' I can\'t do this';
+
+			console.log(container1 + container2);
+			console.log('200' + 300);
 
 			/*-------------------------------------
-			| Conditions
+			| Conditions - JS comparison
 			-------------------------------------*/
+			var weather = 'sunny';
+			if (weather == 'sunny')
+			{
+				console.log('bring your umbrella');
+			}
+			else {
+				console.log('bring your sunscreen');
+
+			}
+
 
 
 			/*-------------------------------------
 			| Toggle Element Examples
 			-------------------------------------*/
 
+			//0. Grab some toys
+			var button = document.querySelector('button.product');
+			var departureDetails = document.querySelector('div .departure-details');
+			var showHideText =  document.querySelector('button.product span');
+
+			console.log('Button', button);
+			console.log('SHow Hide text', showHideText);
+			console.log('Depart Details', departureDetails);
+
+
+			//1. Hide the departure Details
+			departureDetails.style.display='none';
+			// 2.When user clicks on button:
+			button.addEventListener('click', function(){
+				console.log('You clicked me');
+
+
+				if (departureDetails.style.display=='none') {
+			//a. shows departure details
+			departureDetails.style.display='block';
+
+							// change name to 'hide'
+							showHideText.innerHTML = 'Hide';
+
+							}
+							else {
+			//b. hides departure details
+			departureDetails.style.display='none';
+				/// change name to 'Show'
+				showHideText.innerHTML= 'Show';
+				}
+});
 
 		</script>
 
