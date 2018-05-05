@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hover :: mouseover and mouseout</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			body { background-color: #467747; }
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Hover :: mouseover and mouseout</h1>
+
+			<div class="rollover">
+				<img src="./img/gray/1_300x200.jpg">
+				<img src="./img/gray/2_300x200.jpg">
+				<img src="./img/gray/3_300x200.jpg">
+				<img src="./img/gray/4_300x200.jpg">
+				<img src="./img/gray/5_300x200.jpg">
+				<img src="./img/gray/6_300x200.jpg">
+			</div>
+		</div>
+
+		<script>
+
+var Images = document.querySelectorAll('.rollover img')
+
+console.log('Images Array', Images);
+console.log('Images Number 1', Images[0]);
+console.log('Images Number 2', Images[1]);
+console.log('Images Number 3', Images[2]);
+console.log('Images Number 4', Images[3]);
+console.log('Images Number 5', Images[4]);
+console.log('Images Number62', Images[5]);
+
+/*-------------------------------------
+| Image 1
+-------------------------------------*/
+
+Images[0].addEventListener('mouseover',function(){
+console.log('over');
+Images[0].src = "./img/color/1_300x200.jpg";
+});
+
+Images[0].addEventListener('mouseout',function(){
+console.log('out');
+Images[0].src = "./img/gray/1_300x200.jpg";
+});
+
+
+/*-------------------------------------
+| Image 2
+-------------------------------------*/
+
+Images[1].addEventListener('mouseover',function(){
+console.log('over');
+Images[1].src = "./img/color/2_300x200.jpg";
+});
+
+Images[1].addEventListener('mouseout',function(){
+console.log('out');
+Images[1].src = "./img/gray/2_300x200.jpg";
+});
+
+/*-------------------------------------
+| Image 3
+-------------------------------------*/
+
+
+Images[2].addEventListener('mouseover',function(){
+console.log('over');
+Images[2].src = "./img/color/3_300x200.jpg";
+});
+
+Images[2].addEventListener('mouseout',function(){
+console.log('out');
+Images[2].src = "./img/gray/3_300x200.jpg";
+});
+
+
+/*-------------------------------------
+| Image 4
+-------------------------------------*/
+
+Images[3].addEventListener('mouseover',function(){
+console.log('over');
+Images[3].src = "./img/color/4_300x200.jpg";
+});
+
+Images[3].addEventListener('mouseout',function(){
+console.log('out');
+Images[3].src = "./img/gray/4_300x200.jpg";
+});
+
+
+/*-------------------------------------
+| Image 5
+-------------------------------------*/
+
+Images[4].addEventListener('mouseover',function(){
+console.log('over');
+Images[4].src = "./img/color/5_300x200.jpg";
+});
+
+Images[4].addEventListener('mouseout',function(){
+console.log('out');
+Images[4].src = "./img/gray/5_300x200.jpg";
+});
+
+
+
+/*-------------------------------------
+| Image 6
+-------------------------------------*/
+
+Images[5].addEventListener('mouseover',function(){
+console.log('over');
+Images[5].src = "./img/color/6_300x200.jpg";
+});
+
+Images[5].addEventListener('mouseout',function(){
+console.log('out');
+Images[5].src = "./img/gray/6_300x200.jpg";
+});
+
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Lightbulbs Challenge</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/scripts.js"></script>
+	</head>
+	<body>
+		<h1>Lightbulbs Challenge</h1>
+
+		<div id="stage" data-currstate="one">
+			<img id="red" 	data-on="img/red-on.png"	data-off="img/red-off.png" 	src="img/red-off.png">
+			<img id="green" data-on="img/green-on.png"	data-off="img/green-off.png" src="img/green-off.png">
+			<img id="blue" 	data-on="img/blue-on.png"	data-off="img/blue-off.png" 	src="img/blue-off.png">
+		</div>
+
+
+	</body>
+
+	<script type="text/javascript">
+
+	var theImages = document.querySelectorAll('#stage img');
+
+	console.log('theImages');
+
+	function image_over(){
+		console.log(this.dataset.on);
+		this.src = this.dataset.on;
+	}
+
+
+	function image_out(){
+		console.log(this.dataset.off);
+		this.src = this.dataset.off;
+	}
+
+
+theImages[0].addEventListener('mouseover',image_over);
+theImages[0].addEventListener('mouseout',image_out);
+
+theImages[1].addEventListener('mouseover',image_over);
+theImages[1].addEventListener('mouseout',image_out);
+
+theImages[2].addEventListener('mouseover',image_over);
+theImages[2].addEventListener('mouseout',image_out);
+
+	</script>
+</html>

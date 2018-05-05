@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Remote Swap</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			.remote {
+				border: solid teal 10px;
+				width: 960px;
+				height: 320px;
+				margin: 25px auto;
+				background-color: white;
+			}
+			/*Thumbnails on the right or left*/
+			.remote .thumbs {
+				width: 80px;
+				height: 80px;
+
+				margin: 0px;
+				padding: 0px;
+
+			}
+
+			/*Large opposite of the thumbnails (e.g. right or left)*/
+			.remote .large {
+				width: 640px;
+				height: 320px;
+
+				margin: 0px;
+				float: right;
+
+			}
+			.leftpannel{
+
+				width: 320px;
+				height:320px;
+
+				margin: 0px;
+				padding:0px;
+
+				float: left;
+
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Remote Swap</h1>
+
+		<div class="remote">
+			<div class=leftpannel>
+			<div class="thumbs">
+				<img src="./img/small/1_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/2_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/3_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/4_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/5_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/6_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/7_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/8_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/9_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/10_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/11_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/12_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/13_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/14_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/15_80.jpg"></div>
+				<div class="thumbs"><img src="./img/small/16_80.jpg"></div>
+		</div>
+			<div class="large">
+				<img src="./img/large/1_960.jpg">
+			</div>
+
+			</div>
+		</div>
+
+		<script>
+console.log('Java is working');
+
+var largeImage = document.querySelectorAll('.large img')
+var smallImage = document.querySelectorAll('.thumbs img')
+
+console.log('Large Image 1',largeImage[0]);
+console.log('Large Image 2',largeImage[1]);
+console.log('Large Image 3',largeImage[2]);
+console.log('Large Image 4',largeImage[3]);
+console.log('Large Image 5',largeImage[4]);
+console.log('Large Image 6',largeImage[5]);
+console.log('Large Image 7',largeImage[6]);
+console.log('Large Image 8',largeImage[7]);
+console.log('Large Image 9',largeImage[8]);
+console.log('Large Image 10',largeImage[9]);
+console.log('Large Image 11',largeImage[10]);
+console.log('Large Image 12',largeImage[11]);
+console.log('Large Image 13',largeImage[12]);
+console.log('Large Image 14',largeImage[13]);
+console.log('Large Image 15',largeImage[14]);
+console.log('Large Image 16',largeImage[15]);
+console.log('Small Image',smallImage);
+console.log('Small Image 1',smallImage[0]);
+console.log('Small Image 2',smallImage[1]);
+console.log('Small Image 3',smallImage[2]);
+console.log('Small Image 4',smallImage[3]);
+console.log('Small Image 5',smallImage[4]);
+console.log('Small Image 6',smallImage[5]);
+console.log('Small Image 7',smallImage[6]);
+console.log('Small Image 8',smallImage[7]);
+console.log('Small Image 9',smallImage[8]);
+console.log('Small Image 10',smallImage[0]);
+console.log('Small Image 11',smallImage[0]);
+console.log('Small Image 12',smallImage[0]);
+console.log('Small Image 13',smallImage[0]);
+console.log('Small Image 14',smallImage[0]);
+console.log('Small Image 15',smallImage[0]);
+console.log('Small Image 16',smallImage[0]);
+
+//
+//
+// smallImage[0].addEventListener('mouseover', function(){
+// 	console.log('change to Image1');
+// largeImage[0].src = './img/large/1_960.jpg';
+// });
+//
+// smallImage[1].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/2_960.jpg';
+// });
+//
+//
+// smallImage[2].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/3_960.jpg';
+// });
+//
+//
+// smallImage[3].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/4_960.jpg';
+// });
+//
+//
+// smallImage[4].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/5_960.jpg';
+// });
+//
+// smallImage[5].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/6_960.jpg';
+// });
+//
+//
+// smallImage[6].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/7_960.jpg';
+// });
+//
+//
+// smallImage[7].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/8_960.jpg';
+// });
+//
+//
+// smallImage[8].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/9_960.jpg';
+// });
+//
+// smallImage[9].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/10_960.jpg';
+// });
+//
+//
+// smallImage[10].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/11_960.jpg';
+// });
+//
+//
+// smallImage[11].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/12_960.jpg';
+// });
+//
+//
+// smallImage[12].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/13_960.jpg';
+// });
+//
+// smallImage[13].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/14_960.jpg';
+// });
+//
+//
+// smallImage[14].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/15_960.jpg';
+// });
+//
+// smallImage[15].addEventListener('mouseover', function(){
+// 	console.log('change to Image2');
+// largeImage[0].src = './img/large/16_960.jpg';
+// });
+
+
+
+
+
+
+
+			// Your script goes here.
+		</script>
+	</body>
+</html>

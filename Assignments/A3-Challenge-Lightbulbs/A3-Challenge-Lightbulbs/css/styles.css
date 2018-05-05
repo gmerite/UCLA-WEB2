@@ -1,0 +1,28 @@
+body { background-color: #333; color: #eee; text-align: center; }
+
+#stage {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+
+	position: relative;
+
+	background-color: #eee;
+	background-image: url(../img/pixelgrid-800.gif);
+}
+#stage img {
+	background-color: rgba(0,0,0,.2);;
+	box-shadow: inset 0px 0px 20px rgba(0,0,0,.8);
+	display: block;
+	position: absolute;
+}
+
+#stage img:hover {
+	background-color: rgba(0,0,0,0);;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}
+
+#stage img.red 		{ top: 0px; left: 300px; }
+#stage img.green 	{ top: 400px; left: 0px; }
+#stage img.blue 	{ top: 400px; left: 600px; }
+
